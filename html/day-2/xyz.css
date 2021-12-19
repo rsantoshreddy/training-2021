@@ -1,0 +1,9 @@
+.heading {
+  border: 1px solid blue;
+  color: red;
+}
+
+#para,
+#para2 {
+  background-color: chartreuse;
+}
