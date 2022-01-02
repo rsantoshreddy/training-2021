@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        background-color: #ff0000;
+        border: 1px solid red;
+      }
+      .item1 {
+        background-color: green;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        color: #fff;
+        float: left;
+      }
+      .item2 {
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        background-color: indigo;
+        color: #fff;
+        float: right;
+      }
+      .parent:after {
+        clear: both;
+        display: block;
+        content: ' ';
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="item1">item 1</div>
+      <div class="item2">Item 2</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quas
+      autem minima amet quidem nam saepe ipsam eligendi nisi fugiat, voluptas
+      aliquid quibusdam ducimus optio? Porro similique cumque eos odit.
+    </p>
+  </body>
+</html>

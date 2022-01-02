@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .a {
+        border: 1px solid black;
+        border-top-color: blue;
+        border-right-color: green;
+        border-bottom-color: red;
+        border-left-color: yellow;
+        height: 20px;
+        width: 20px;
+        font-size: 16px;
+        text-align: center;
+        transition: all 2s;
+        position: relative;
+        left: 10px;
+      }
+      .a:hover {
+        width: 100px;
+        height: 100px;
+        font-size: 100px;
+        left: 50px;
+        transform: rotate(360deg);
+      }
+      @keyframes b {
+        from {
+          background-color: chocolate;
+          width: 30px;
+        }
+        to {
+          background-color: crimson;
+          width: 100px;
+        }
+      }
+
+      @keyframes c {
+        0% {
+          left: 0;
+          top: 0;
+        }
+        25% {
+          top: 0;
+          left: 100px;
+        }
+        50% {
+          left: 100px;
+          top: 100px;
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      div.b {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: chocolate;
+        text-align: center;
+        animation-name: c;
+        animation-duration: 8s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">A</div>
+    <div class="b">B</div>
+  </body>
+</html>
