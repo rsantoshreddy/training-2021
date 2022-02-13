@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        background-color: rgb(221, 222, 135);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid red;
+        background-color: rgb(131, 12, 201);
+      }
+      .item {
+        border: 1px solid #ccc;
+        background-color: green;
+        color: #fff;
+        position: relative;
+        padding: 10px;
+      }
+      .delete {
+        position: absolute;
+        right: 10px;
+        top: 25%;
+        border: 1px solid indigo;
+        font-size: 0.5em;
+        background-color: indigo;
+        padding: 7px;
+        border-radius: 14px;
+        cursor: pointer;
+        color: #fff;
+      }
+      *:focus {
+        border: 5px solid red;
+      }
+      h1 {
+        color: indigo;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <input type="text" id="title" value="test" />
+        <!-- <input type="text" id="desc" /> -->
+        <button id="submit">Submit</button>
+      </form>
+      <h1
+        tabindex="0"
+        id="headline"
+        class="heading-class"
+        style="color: red; background-color: yellow"
+      >
+        Todo list 1
+      </h1>
+      <h1
+        id="headline"
+        class="heading-class"
+        style="color: red; background-color: yellow"
+      >
+        Todo list 2
+      </h1>
+      <ul class="list" id="todo-list"></ul>
+    </div>
+    <script src="./object-oriented-programming.js"></script>
+  </body>
+</html>

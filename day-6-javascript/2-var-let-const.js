@@ -1,6 +1,7 @@
 // var let const: to declare variables and constants
 
 var age = 31;
+const pi = 3.2;
 // var address = "MP"
 var name = 'santosh';
 let name = 'reddy';
